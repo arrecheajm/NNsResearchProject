@@ -170,12 +170,12 @@ master2Dtable = [(industry) for industry in master2Dtable if len(industry) == 82
 
 # Save CSV file
 import csv
-with open("MasterDataSheet.csv", "w") as output:
+with open("EdgarDataSet.csv", "w") as output:
     writer = csv.writer(output, lineterminator='\n')
     writer.writerows(master2Dtable)
     
 master2Dtable = [] 
-with open("MasterDataSheet.csv") as csvfile:
+with open("EdgarDataSet.csv") as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         master2Dtable.append(row)
